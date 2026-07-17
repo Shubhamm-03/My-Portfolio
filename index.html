@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shubham — CSE (AI) Student &amp; Web Developer</title>
+<meta name="description" content="Portfolio of Shubham, a B.Tech CSE (AI) student and web developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Clash+Grotesk:wght@500;600;700&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="fieldCanvas" aria-hidden="true"></canvas>
+
+<header class="topbar">
+  <span class="logo">SHUBHAM<span class="logo-dot">.</span></span>
+  <nav class="topnav">
+    <a href="#about">about</a>
+    <a href="#skills">skills</a>
+    <a href="#projects">projects</a>
+    <a href="#contact">contact</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-text">
+      <p class="mono-tag fade-up">// welcome to my portfolio</p>
+      <h1 class="fade-up">Hi, I'm <span class="accent-text">Shubham</span></h1>
+      <p class="hero-role fade-up">B.Tech CSE (AI) Student &amp; Web Developer</p>
+      <p class="hero-desc fade-up">
+        I design and build interfaces that feel alive — and right now I'm teaching myself
+        how to make them intelligent, working through Python and AI fundamentals alongside
+        front-end projects.
+      </p>
+      <div class="hero-actions fade-up">
+        <a href="#projects" class="btn btn-primary"><span>View Projects</span></a>
+        <a href="#contact" class="btn btn-ghost"><span>Get in Touch</span></a>
+      </div>
+      <div class="hero-stats fade-up">
+        <div class="stat"><p class="stat-num">B.Tech</p><p class="stat-label">CSE &amp; AI</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><p class="stat-num">3+</p><p class="stat-label">Front-end Projects</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><p class="stat-num">Python</p><p class="stat-label">In Progress</p></div>
+      </div>
+    </div>
+
+    <div class="hero-photo fade-up">
+      <div class="tilt-wrap" id="photoTilt">
+        <div class="tilt-card">
+          <div class="tilt-glare"></div>
+          <img src="profile.jpg" alt="Portrait of Shubham" />
+          <div class="tilt-badge mono-tag">◆ AI &amp; Web Dev</div>
+        </div>
+      </div>
+      <div class="orbit-ring"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <p class="section-eyebrow mono-tag">01 — about</p>
+    <h2 class="section-title">A student learning to make software think.</h2>
+    <p class="section-body">
+      I'm currently pursuing a B.Tech in Computer Science &amp; Engineering with a specialization
+      in Artificial Intelligence. Alongside my coursework, I completed a full web development
+      course and now build front-end projects for fun — most recently a dark, luxury-styled 3D
+      sneaker store built entirely with vanilla HTML, CSS, and JavaScript. I'm currently deep in
+      Python: syntax, functions, file I/O, exception handling, OOP, and modules — the groundwork
+      for the AI side of my degree.
+    </p>
+    <div class="about-tiles">
+      <div class="tile tilt-tile">
+        <p class="tile-label mono-tag">education</p>
+        <p class="tile-value">B.Tech, CSE (AI)</p>
+      </div>
+      <div class="tile tilt-tile">
+        <p class="tile-label mono-tag">focus</p>
+        <p class="tile-value">Web Dev + Python / AI Foundations</p>
+      </div>
+      <div class="tile tilt-tile">
+        <p class="tile-label mono-tag">currently</p>
+        <p class="tile-value">Learning OOP &amp; Python Internals</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <p class="section-eyebrow mono-tag">02 — skills</p>
+    <h2 class="section-title">Tools I reach for.</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <p class="skill-group-title">Front-End</p>
+        <div class="tag-row">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Responsive Design</span>
+          <span class="tag">Canvas / 3D CSS</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <p class="skill-group-title">Programming</p>
+        <div class="tag-row">
+          <span class="tag">Python</span>
+          <span class="tag">OOP Concepts</span>
+          <span class="tag">Data Structures</span>
+          <span class="tag">Exception Handling</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <p class="skill-group-title">Tools</p>
+        <div class="tag-row">
+          <span class="tag">Git &amp; GitHub</span>
+          <span class="tag">VS Code</span>
+          <span class="tag">Figma</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <p class="skill-group-title">Currently Learning</p>
+        <div class="tag-row">
+          <span class="tag tag-progress">AI / ML Foundations</span>
+          <span class="tag tag-progress">Advanced Python OOP</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <p class="section-eyebrow mono-tag">03 — projects</p>
+    <h2 class="section-title">Things I've built.</h2>
+
+    <div class="projects-grid">
+
+      <article class="project-card tilt-card-3d">
+        <div class="tilt-glare"></div>
+        <div class="project-inner">
+          <div class="project-meta">
+            <p class="mono-tag">2026</p>
+            <p class="mono-tag project-stack">HTML · CSS · JS</p>
+          </div>
+          <h3 class="project-title">3D Sneaker Webstore</h3>
+          <p class="project-desc">
+            A dark, luxury-themed sneaker e-commerce concept — parallax scroll effects, an
+            interactive cart, and a fully responsive layout, structured across separate HTML,
+            CSS, and JS files.
+          </p>
+          <div class="project-links">
+            <a href="#" class="link-arrow">View Code →</a>
+            <a href="https://shubhamm-03.github.io/SneakerVerse/" class="link-arrow">Live Demo →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card tilt-card-3d">
+        <div class="tilt-glare"></div>
+        <div class="project-inner">
+          <div class="project-meta">
+            <p class="mono-tag">2026</p>
+            <p class="mono-tag project-stack">Python</p>
+          </div>
+          <h3 class="project-title">Python Practice Suite</h3>
+          <p class="project-desc">
+            Exercises covering core Python — loops, string manipulation, data structure
+            conversions, exception handling, and a multi-parameter billing function — built
+            while learning OOP concepts like encapsulation and polymorphism.
+          </p>
+          <div class="project-links">
+            <a href="#" class="link-arrow">View Code →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card tilt-card-3d project-card-placeholder">
+        <div class="tilt-glare"></div>
+        <div class="project-inner">
+          <div class="project-meta">
+            <p class="mono-tag">— — —</p>
+            <p class="mono-tag project-stack">Your Stack</p>
+          </div>
+          <h3 class="project-title">Your Next Project</h3>
+          <p class="project-desc">
+            Swap this card for your next build — edit the title, description, and links
+            directly in index.html.
+          </p>
+          <div class="project-links">
+            <a href="#" class="link-arrow">View Code →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <p class="section-eyebrow mono-tag">04 — contact</p>
+    <h2 class="section-title">Let's talk.</h2>
+    <p class="section-body">
+      Open to internships, collaborations, and interesting front-end or AI-adjacent projects.
+      Reach out through any of the channels below.
+    </p>
+    <div class="contact-links">
+      <a href="mailto:subu87892480@gmail.com" class="contact-link">
+        <span class="mono-tag">email</span> subu87892480@gmail.com
+      </a>
+      <a href="https://github.com/Shubhamm-03" class="contact-link" target="_blank" rel="noopener">
+        <span class="mono-tag">github</span> github.com/Shubhamm-03
+      </a>
+      <a href="https://linkedin.com/in/yourusername" class="contact-link" target="_blank" rel="noopener">
+        <span class="mono-tag">linkedin</span> linkedin.com/in/yourusername
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="mono-tag">© 2026 Shubham — built with HTML, CSS &amp; JS</p>
+  <a href="#top" class="back-top">back to top ↑</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
